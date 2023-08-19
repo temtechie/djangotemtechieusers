@@ -1,0 +1,9 @@
+{% extends 'master.html' %}
+
+{% block title %}error page{% endblock title %}
+
+{% load static %}
+{% block content %}
+    <h2>Oops! seems the page you are looking for is invalid!</h2>
+    <p><a href={% url 'home/' %}></a>go to home</p>
+{% endblock content %}

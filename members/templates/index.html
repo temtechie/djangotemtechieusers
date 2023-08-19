@@ -1,0 +1,17 @@
+{% extends 'master.html' %}
+
+{% load static %}
+
+{% block title %}Member List{% endblock title %}
+{% block content %}
+    <h2>Members List</h2>
+    <ul>
+        {% for x in my_members %}
+            <li><a href="details/{{x.id}}">{{x.first_name}} {{x.last_name}}</a></li>
+        {% endfor %}
+    </ul>
+    {% include 'form.html' %}
+{% endblock content %}
+
+
+  

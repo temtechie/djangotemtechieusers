@@ -1,0 +1,14 @@
+
+{% extends 'master.html' %}
+
+{% block title %}{{member_detail.first_name}} {{member_detail.last_name}}'s detail{% endblock title %}
+
+{% load static %}
+{% block content %}
+   <h2>{{member_detail.first_name}}{{member_detail.last_name}} information</h2>
+    <p>Phone: {{member_detail.phone}} </p>
+    <p>Member since: {{member_detail.joined_date}}</p>
+    <p>Back to <a href="/members">Members</a> </p>
+
+{% endblock content %}
+ 
